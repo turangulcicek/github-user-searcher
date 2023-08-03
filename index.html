@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-dark text-bg-dark">
+    <header class="navbar navbar-dark bg-dark mb-3">
+      <div
+        class="container p-3 d-flex justify-content-between align-items-center"
+      >
+        <a class="navbar-brand">Github Bulucu</a>
+        <button id="theme-btn" class="btn btn-light">Açık Mod</button>
+      </div>
+    </header>
+    <!-- form area -->
+    <div class="container mt-4">
+      <div id="alert-area"></div>
+      <div class="border p-3">
+        <h3>Github Kullanıcı Adını Ara</h3>
+        <p>Kullanıcı bilgilerine erişmek için bir Kullanıcı adı giriniz</p>
+        <div class="d-flex gap-3 align-items-center">
+          <input id="search-input" type="text" class="form-control" />
+          <button id="search-btn" class="btn btn-primary">Ara</button>
+        </div>
+      </div>
+    </div>
+    <!-- form area -->
+    <!-- proil area -->
+    <div id="profile" class="container"></div>
+
+    <!-- user projects -->
+    <div id="repos" class="container p-3"></div>
+
+    <!-- js bağlantı -->
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
